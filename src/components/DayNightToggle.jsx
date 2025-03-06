@@ -14,9 +14,9 @@ const DayNightToggle = () => {
       <button 
         onClick={toggleMode}
         className="relative w-64 h-32 flex items-center justify-center focus:outline-none group"
-        aria-label={isDarkMode ? "Switch to day mode" : "Switch to night mode"}
-        role="switch"
-        aria-checked={isDarkMode}
+        aria-label={isDarkMode ? "Currently night mode, click to switch to day mode" : "Currently day mode, click to switch to night mode"}
+        role="button"
+        aria-pressed={isDarkMode}
         style={{ perspective: "400px" }}
       >
         {/* Main toggle container with enhanced 3D inset styling */}
